@@ -368,6 +368,9 @@ A: Yes. While one carrier's documents are processing, start a quote for another 
 **Q: What if I need help during the pilot?**
 A: Ask in `#customer-support` or use the contact support button in any error message. For pilot-specific feedback, use `#temp-broker-self-serve-quoting-feedback`.
 
+**Q: What is self quoting / self service quoting / broker quoting?**
+A: You're likely thinking of Self-Serve Quoting — ThreeFlow's feature that lets approved strategic brokers and GAs start, update, and submit carrier quotes directly inside ThreeFlow without waiting on carrier turnaround. No new system required — execution happens where the work already lives.
+
 ---
 
 # Quick Reference
