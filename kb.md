@@ -3,391 +3,341 @@
 ## Platform: ThreeFlow — Benefits Insurance Placement Platform
 Last updated: March 2026
 
-> **IMPORTANT**: ThreeFlow is a benefits insurance platform. Self-Serve Quoting is specifically about insurance benefits quoting for brokers, GAs, and carriers. This has nothing to do with freight, logistics, shipping, or any other industry.
+> **CRITICAL CONTEXT**: ThreeFlow is a **benefits insurance** platform used by brokers and carriers to manage group insurance placements. Self-Serve Quoting is specifically about **benefits insurance quoting** — dental, vision, life, disability, and similar group coverage products. This has absolutely nothing to do with freight, logistics, shipping, transportation, or any other industry.
 
 ---
 
 ## Table of Contents
-1. [Product Overview](#product-overview)
-2. [Pilot Details](#pilot-details)
-3. [Permission & Access](#permission--access)
-4. [Process Guides](#process-guides)
-5. [Step Variations & Edge Cases](#step-variations--edge-cases)
-6. [Error Scenarios](#error-scenarios)
-7. [Common Misconceptions](#common-misconceptions)
-8. [Q&A Library](#qa-library)
-9. [Quick Reference](#quick-reference)
+1. [What is Self-Serve Quoting](#what-is-self-serve-quoting)
+2. [Who Can Use It](#who-can-use-it)
+3. [Pilot Program](#pilot-program)
+4. [Value & Benefits](#value--benefits)
+5. [How It Works](#how-it-works)
+6. [Quoting Methods](#quoting-methods)
+7. [Quote Statuses](#quote-statuses)
+8. [Step-by-Step Guides](#step-by-step-guides)
+9. [Error Handling](#error-handling)
+10. [Common Questions & Misconceptions](#common-questions--misconceptions)
+11. [Quick Reference](#quick-reference)
 
 ---
 
-# Product Overview
+# What is Self-Serve Quoting
 
-## What is Self-Serve Quoting?
+Self-Serve Quoting is a ThreeFlow feature that gives approved strategic brokers and General Agents (GAs) the ability to start, update, and submit carrier quotes for benefits insurance products directly inside ThreeFlow — without waiting on carrier turnaround.
 
-**Definition**: Self-Serve Quoting gives approved strategic brokers and General Agents (GAs) the ability to start, update, and submit carrier quotes directly inside ThreeFlow — without waiting on carrier turnaround.
+Strategic users access the same quoting tools carriers use today, within the existing carrier workflow. There is no new system to learn, no side workflows, and no external tools required. Execution happens where the work already lives — inside ThreeFlow.
 
-**Key point**: Strategic users access the same quoting tools carriers use today, within the existing carrier workflow. No new system. No side workflows. Execution happens where the work already lives.
+Self-Serve Quoting was built to solve three problems that strategic brokers face daily:
+- Waiting on carrier turnaround while client deadlines approach
+- Coordinating quotes over email, outside the platform, creating version control issues
+- Spending time tracking quote status instead of advising clients
 
-**Common terminology**:
-- Self-Serve Quoting
-- Strategic quoting autonomy
-- Broker self-serve
-- SSQ (informal)
-
-## What problem does it solve?
-
-Three core problems eliminated:
-1. **Deadline stress** — Brokers no longer wait on carrier turnaround to keep quotes progressing
-2. **Off-platform coordination** — No more emailing carriers, tracking updates manually, or collecting documents outside ThreeFlow
-3. **Status chasing** — Time spent tracking progress is replaced by time spent advising clients
-
-## What are the core value propositions?
-
-**For strategic brokers:**
-- Move faster when timelines matter — client deadlines don't move, carrier turnaround no longer blocks progress
-- Keep everything in one place — quotes, updates, and submissions stay inside ThreeFlow
-- Stay aligned with carriers — work within the existing carrier quoting experience using the same tools
-
-**For carriers:**
-- Full visibility into all broker-submitted quotes
-- Remain key partners in review and alignment
-- Less back-and-forth means fewer version issues and clearer alignment
-
-**For ThreeFlow:**
-- More quotes move through the system
-- Less work happens over email
-- Clearer visibility across strategic accounts
-- Moves from managing placements to helping make them happen
-
-## Who is this for?
-
-**Primary audience**: National brokers and General Agents (GAs) — specifically approved strategic users at high-volume firms.
-
-**Current pilot participants**:
-- Alliant Ben West Programs Team
-- The Cason Group
-- Brown & Brown (NMGA and local offices)
-- MMA - NC
-
-**Not available to**: General broker population, carriers, or unapproved users. Access is controlled via the `quote management` permission.
+Other names this feature may be referred to as: strategic quoting autonomy, broker self-serve, broker quoting, self service quoting, SSQ, self quoting, broker quote management.
 
 ---
 
-# Pilot Details
+# Who Can Use It
 
-## [PILOT-001] Pilot Overview
+Self-Serve Quoting is available to **approved strategic users** — national brokers and General Agents (GAs) at high-volume firms who have been granted the `quote management` permission by ThreeFlow.
 
-**Launch date**: April 6, 2026
-**Duration**: 8 weeks (April 6 — May 30, 2026)
-**Priority**: P2
-**Audience**: National brokers
-**Slack channel for feedback**: `#temp-broker-self-serve-quoting-feedback`
+Access is **not** available to:
+- General broker population
+- Carriers
+- Users without the `quote management` permission
+- Anyone outside the current pilot participant list
 
-## [PILOT-002] Pilot Participants
+If someone believes they should have access but doesn't, they should contact their ThreeFlow account team. Attempting to modify URLs to access restricted pages will trigger a route guard and redirect to the My Quotes page.
 
-| Broker | Contact | Pilot Users |
+Self-Serve Quoting applies to both **national brokers and GAs** — it is not limited to one audience type.
+
+---
+
+# Pilot Program
+
+## Overview
+Self-Serve Quoting launched as a pilot on **April 6, 2026**. The pilot runs for **8 weeks** through **May 30, 2026**. It is a P2 priority feature targeted at national brokers.
+
+The pilot is not testing demand — brokers have already asked for this capability. The pilot is focused on validating whether the solution fully solves the problem, whether behavior shifts from carrier-dependent to self-serve, and what is required to make this the default workflow.
+
+## Who is in the Pilot
+
+The pilot is limited to four broker organizations:
+
+**The Cason Group**
+- Contact: Viri Schoenfeld
+- Pilot users: Drew Brickwedde, Josh Gregory, Nate Parrish, Rob Giovanelli
+
+**Alliant West — Programs Team**
+- Contact: Laura Calnan
+- Pilot users: Erica Smyth (additional users TBD)
+
+**Brown & Brown (NMGA and local offices)**
+- Contact: Viri Schoenfeld
+- Pilot users: TBD
+
+**MMA — NC (Marsh McLennan)**
+- Contact: Addie Marinkovich (Green)
+- Pilot users: Krissy Moscatelli, Liz Szychowicz, Abagail Bilyeu, Chris Kveseth, Angela Wright
+
+## How to Get Access / Join the Pilot
+
+Self-Serve Quoting is currently limited to the four pilot organizations listed above. It is not available to brokers outside this list yet. If a partner or broker wants access, they should be directed to their ThreeFlow account team or post in `#temp-broker-self-serve-quoting-feedback` to flag interest for future expansion. There is no self-service way to get access during the pilot.
+
+## Pilot Volume Expectations
+
+Approximately 1,000 coverages will be sent to market during the pilot, primarily driven by Brown & Brown. Early in the pilot, submission volume may be inconsistent as users learn the product. Utilization should increase over time.
+
+## Pilot Feedback Channel
+
+Slack channel for pilot feedback: `#temp-broker-self-serve-quoting-feedback`
+
+---
+
+# Value & Benefits
+
+## For Strategic Brokers
+
+**Move faster when timelines matter**
+Client deadlines don't move. Strategic brokers no longer have to wait on carrier turnaround to keep quotes progressing. They can start, update, and submit quotes on their own timeline.
+
+**Keep everything in one place**
+No more chasing documents over email or tracking updates across multiple sources. Quotes, updates, and submissions stay inside ThreeFlow — one source of truth for everyone.
+
+**Stay aligned with carriers**
+Strategic brokers work within the existing carrier quoting experience, using the same tools and workflows carriers use. Carriers keep full visibility throughout the process.
+
+## For Carriers
+
+Carriers retain full visibility and control over their quotes at all times. Self-serve quoting helps brokers move faster while keeping all execution inside ThreeFlow. Quotes submitted by brokers on a carrier's behalf remain visible within the carrier's existing workflow. Carriers can edit broker-submitted quotes and remain key partners in review and alignment. Less back-and-forth means fewer version issues and clearer alignment.
+
+## For ThreeFlow
+
+Self-Serve Quoting drives more quotes through the platform, reduces work that happens over email, and gives ThreeFlow clearer visibility across strategic accounts. It moves ThreeFlow from managing placements to helping make them happen — becoming part of the daily workflow for high-volume national brokers rather than just a step in the process.
+
+---
+
+# How It Works
+
+The Self-Serve Quoting workflow has four stages:
+
+**Stage 1: Setup**
+The broker finishes setting up the marketing event on the broker site.
+
+**Stage 2: Start Quote**
+The broker navigates to the product comparison page and clicks the "Start Quote" button for a specific carrier. The broker is then authenticated into the carrier site for that project and can begin quoting using smart proposals, ThreeFlow Assist, copy plan design, or manual entry.
+
+**Stage 3: Process & Review**
+Documents are processed by ThreeFlow AI (1–5 minutes). The broker reviews the AI output, corrects any Action Needed items, and confirms rates and plan design before submitting.
+
+**Stage 4: Submit & Return**
+The broker submits the quote. A confirmation email is sent automatically. The broker clicks Back to return to the product comparison page, where the submitted quote populates the correct carrier column. All edits and submissions are documented on ThreeFlow.
+
+Brokers can work across multiple carriers simultaneously — while one carrier's documents are processing, they can start a quote for another carrier using the carrier dropdown.
+
+---
+
+# Quoting Methods
+
+Strategic users with the `quote management` permission have access to the following quoting methods:
+
+**Smart Proposals**
+Uses ThreeFlow AI to extract rate and plan design information from an uploaded proposal document (PDF, .doc, or .xls — max 20MB) and automatically populate the quote. The fastest method for new business quoting.
+
+**Smart Renewals**
+Same process as smart proposals but used for renewing existing business rather than new coverage. The broker uploads renewal documents or enters data manually prior to submission. Note: attach renewal (processing renewals via email) is not available in v1.
+
+**ThreeFlow Assist**
+An AI-assisted quoting option with longer processing time — up to 48 hours. Not recommended for time-sensitive workflows. ThreeFlow Assist is optional and can be skipped entirely. If a broker accidentally sends to ThreeFlow Assist and wants to undo it, they must contact support.
+
+**Copy Plan Design**
+Allows the broker to populate missing values by copying plan design from an existing quote. Available on the plan design page via the "Populate missing values from" dropdown. Reduces manual entry for similar quotes across carriers.
+
+**Manual Quoting**
+The broker enters rates and plan design data manually on the carrier site. Used when AI output is incomplete or when specific fields need to be entered without AI assistance.
+
+**User defaults are not available** for strategic users in v1.
+
+---
+
+# Quote Statuses
+
+| Status | Meaning | What to do |
 |---|---|---|
-| The Cason Group | Viri Schoenfeld | Drew Brickwedde, Josh Gregory, Nate Parrish, Rob Giovanelli |
-| Alliant West - Programs Team | Laura Calnan | Erica Smyth + additional users TBD |
-| Brown & Brown (NMGA) | Viri Schoenfeld | TBD |
-| MMA - NC | Addie Marinkovich (Green) | Krissy Moscatelli, Liz Szychowicz, Abagail Bilyeu, Chris Kveseth, Angela Wright |
+| Processing | ThreeFlow AI is extracting rate and plan design data from the uploaded document | Wait 1–5 minutes |
+| Ready to review | AI successfully found and entered rates | Review carefully — AI can make mistakes — then submit |
+| Action needed | AI could not populate one or more required fields | Click Edit details, enter missing data manually, then submit |
+| Submitted | Quote has been submitted to the carrier | Nothing — done |
+| In progress | Quote is active but not yet submitted | Review and submit |
 
-## [PILOT-003] How to Join the Pilot
-
-**Question**: My partner/broker wants to use Self-Serve Quoting. How do they get access?
-
-**Answer**: Self-Serve Quoting is currently limited to approved pilot participants only. Access is not available to the general broker population yet. Direct them to their ThreeFlow account team or post in `#temp-broker-self-serve-quoting-feedback` to flag interest for future expansion.
-
-## [PILOT-004] Pilot Volume Expectations
-
-**Expected volume**: ~1,000 coverages will be sent to market during the pilot, primarily driven by Brown & Brown.
-
-**What to expect**:
-- Early in the pilot, submission volume may be inconsistent as users learn the product
-- Irregular spikes or drop-offs are expected — volume is not linear
-- Utilization should increase over time as users become more familiar
-
-## [PILOT-005] Pilot Exit Criteria
-
-The pilot is considered successful when:
-1. Brokers can independently start, submit, and update quotes without assistance
-2. Brokers report the quoting workflow is clear and usable
-3. Brokers primarily use the intended quoting workflow rather than manual or external processes
-4. Brokers understand where quote data originates
-5. Pilot brokers successfully run meaningful quoting volume through ThreeFlow
+If a quote has not been submitted within 1 hour of processing completing, the broker receives an automatic reminder email to review and submit.
 
 ---
 
-# Permission & Access
+# Step-by-Step Guides
 
-## [ACCESS-001] Who Can Use Self-Serve Quoting?
+## [GUIDE-001] Starting a Quote Using Smart Proposals
 
-**Permission required**: `quote management`
+Use this for new coverage that has not been quoted yet for a carrier.
 
-**Who has it**: Approved strategic users only. Access is controlled by ThreeFlow and currently limited to pilot participants.
-
-**Question**: I think I should have access but don't. What do I do?
-
-**Answer**: Contact your ThreeFlow account team. Do not attempt to modify URL or access pages directly — route guards will redirect you to the My Quotes page and show an access error.
-
-## [ACCESS-002] What Can Strategic Users Do?
-
-Strategic users with `quote management` permission can:
-- Start quotes (new coverage)
-- Update quotes (existing coverage)
-- Submit quotes to carriers
-- Switch between carrier quotes in the same project
-- Use smart proposals, smart renewals, ThreeFlow Assist, copy plan design, and manual quoting
-
-Strategic users **cannot**:
-- Access user defaults (not available in v1)
-- Process renewals via email (attach renewal not in scope for v1)
-- Access carrier-only functionality
-
-## [ACCESS-003] Carrier Visibility
-
-**Question**: Can carriers still see what brokers are doing?
-
-**Answer**: Yes. Carriers retain full visibility and control. All broker activity is visible within the carrier's existing workflow. Carriers can edit broker-submitted quotes and remain key partners in review and alignment.
-
----
-
-# Process Guides
-
-## [PROCESS-001] Starting a Quote (Smart Proposals)
-
-**When to use**: New coverage that hasn't been quoted yet for a carrier.
-
-**Steps**:
 1. Finish setting up the marketing event on the broker site
 2. Navigate to the product comparison page
-3. Click **Start Quote** for the specific carrier (e.g., Lincoln)
-4. You'll be authenticated into the carrier site. The Start Quote modal opens
-5. Upload proposal document(s) — PDF, .doc, or .xls, max 20MB
+3. Click **Start Quote** for the carrier you want to quote (e.g., Lincoln)
+4. You will be authenticated into the carrier site. The Start Quote modal opens
+5. Upload your proposal document(s) — PDF, .doc, or .xls, max 20MB
 6. Click **Send to ThreeFlow**
-7. All products show **Processing** status. While processing, start quotes for other carriers using the carrier dropdown — carriers listed alphabetically
+7. All products show **Processing** status. While processing, you can start a quote for another carrier by selecting them from the carrier dropdown and clicking Go. Carriers are listed alphabetically
 8. Once processing completes, products show **Ready to review** or **Action needed**
-9. Review rates and plan design. Use **Edit details** for action needed items. Optionally use copy plan design or manual entry
-10. Click **Submit quote**. Email confirmation sent automatically
-11. Click **Back** from carrier site banner to return to product comparison page. Submitted quote populates the correct carrier column
+9. Review rates and plan design. Click **Edit details** to correct any Action Needed items. You can also use Copy Plan Design or enter data manually
+10. Click **Submit quote**. An email confirmation is sent automatically
+11. Click **Back** from the carrier site banner to return to the product comparison page. Your submitted quote populates the correct carrier column
 
-**Note**: If the quote has not been submitted within 1 hour of processing, a reminder email is sent automatically.
+## [GUIDE-002] Updating a Quote Using Smart Proposals
 
-## [PROCESS-002] Updating a Quote (Smart Proposals)
+Use this to revise an existing in-progress quote.
 
-**When to use**: Revising an existing in-progress quote.
-
-**Steps**:
 1. Navigate to the product comparison page
 2. Click **Update Quote** for the carrier
 3. The **Caution: AI Will Overwrite Edits** modal appears
-4. Check the box confirming AI processing will remove existing edits
+4. Check the box confirming you understand AI processing will remove all existing edits
 5. Click **Continue**
-6. Upload updated proposal document and click **Send to ThreeFlow**
-7. Follow the same processing, review, and submission steps as start quote
+6. Upload your updated proposal document and click **Send to ThreeFlow**
+7. Follow the same processing, review, and submission steps as the start quote flow
 
-**Warning**: AI processing in the update flow will overwrite ALL previous edits. This cannot be undone. Review carefully before proceeding.
+**Warning**: AI processing in the update flow overwrites ALL previous edits including manual changes. This cannot be undone. If you want to preserve existing edits, enter the new data manually instead.
 
-## [PROCESS-003] Smart Renewals
+## [GUIDE-003] Starting or Updating a Renewal
 
-**When to use**: Renewing existing business (not new coverage).
+Use this for renewing existing business.
 
-**How it differs from smart proposals**:
-- Access via product comparison page → Start Renewal or Update Renewal modal
-- Same upload and review process as smart proposals
-- Can upload renewal documents or manually update data prior to submission
+1. Navigate to the product comparison page
+2. Click **Start Renewal** or **Update Renewal** for the carrier
+3. The renewal modal opens. Upload renewal documents or enter data manually
+4. Follow the same processing, review, and submission steps as smart proposals
 
-**Not available**: Attach renewal (processing renewals via email) is not in scope for v1.
+Note: Attach renewal (processing renewals via email) is not available in v1.
 
-## [PROCESS-004] Switching Between Carriers
+## [GUIDE-004] Switching Between Carriers
 
-**How**: Use the **Carrier quote** dropdown at the top of the carrier site page → select carrier → click **Go**
+1. On the carrier site, locate the **Carrier quote** dropdown at the top of the page
+2. Select the carrier you want to switch to
+3. Click **Go**
 
-**When**: Any point during the workflow, including while documents are still processing for another carrier
+Carriers are listed alphabetically. You can switch at any point during the workflow, including while documents are still processing for another carrier.
 
-**Note**: Carriers are listed alphabetically in the dropdown.
+## [GUIDE-005] Fixing an Action Needed Status
 
-## [PROCESS-005] Submitting a Quote
-
-**After review**:
-- Click **Submit quote** — email confirmation sent automatically
-- Quote edits screen captures: name, date, timestamp, submitted products
-- Click **Back** from carrier site banner to return to product comparison page
-- Submitted quote populates the correct carrier column
-
----
-
-# Step Variations & Edge Cases
-
-## [EDGE-001] Multiple Carriers, Same Project
-
-**Scenario**: Broker needs to quote multiple carriers simultaneously.
-
-**Answer**: While documents are processing for one carrier, start a quote for another carrier using the carrier dropdown. This allows parallel quoting across multiple carriers without waiting for each to complete sequentially.
-
-## [EDGE-002] ThreeFlow Assist Offered During Flow
-
-**Scenario**: ThreeFlow Assist option appears during quoting.
-
-**Answer**: ThreeFlow Assist is optional and can be skipped. It has up to 48-hour processing time — not practical for time-sensitive workflows. For most self-serve quoting scenarios, smart proposals or manual quoting will be faster.
-
-**Warning**: If you accidentally send to ThreeFlow Assist and want to undo it, contact support. You cannot self-service this reversal.
-
-## [EDGE-003] Action Needed After Processing
-
-**Scenario**: Products show **Action needed** status after processing completes.
-
-**Answer**:
-1. Click **Edit details** next to the product showing Action needed
-2. Rates or plan design page opens with missing fields highlighted
-3. Enter required information manually
-4. Return to My Quotes page and submit
-
-## [EDGE-004] Quote Not Submitted After Processing
-
-**Scenario**: Processing completed but quote hasn't been submitted.
-
-**Answer**: A reminder email is sent automatically after 1 hour. Review and submit from the carrier site. Do not re-upload documents — the data is already processed.
-
-## [EDGE-005] Updating a Quote That Already Has Manual Edits
-
-**Scenario**: Quote has manual edits and a new proposal document arrives.
-
-**Warning**: Using **Update Quote** with AI will overwrite ALL previous manual edits. If you want to preserve existing edits, enter the new data manually instead of using the AI update flow.
-
-## [EDGE-006] Copy Plan Design
-
-**When to use**: Completing quotes faster by copying plan design from an existing quote.
-
-**How**: Available on the plan design page — use **Populate missing values from** dropdown to select a plan design to copy.
-
-**Benefit**: Reduces manual entry for similar quotes across carriers.
+1. Click **Edit details** next to the product showing Action Needed
+2. The rates or plan design page opens with missing fields highlighted
+3. Enter the required information manually
+4. Return to the My Quotes page
+5. Submit the quote
 
 ---
 
-# Error Scenarios
+# Error Handling
 
-## [ERROR-001] Cannot Open Quote from Product Comparison Page
+## [ERROR-001] Cannot Open Quote
 
-**Symptom**: Clicked Start Quote or Update Quote but nothing happened, or received an error.
+**What you see**: Clicked Start Quote or Update Quote but received an error instead of being taken to the carrier site.
 
 **Error message**: "ThreeFlow was unable to open the quote. Try again; if the problem persists, contact support."
 
-**Action**: Retry once. If it persists, use the **contact support** button in the error message — this emails support directly.
+**What to do**: Retry once. If the problem persists, click the **contact support** button in the error message to email support directly.
 
-## [ERROR-002] Carrier Dropdown Fails to Load
+## [ERROR-002] Carrier Dropdown Won't Load
 
-**Symptom**: Opened carrier dropdown but carriers don't appear.
+**What you see**: Opened the carrier dropdown but no carriers appear.
 
 **Error message**: "ThreeFlow was unable to show invited carriers. Try again; if the problem persists, contact support."
 
-**Action**: Retry once. If it persists, contact support via the button in the error message.
+**What to do**: Retry once. If the problem persists, use the contact support button.
 
-## [ERROR-003] Carrier Switch Fails
+## [ERROR-003] Cannot Switch Carriers
 
-**Symptom**: Selected a new carrier from dropdown and clicked Go, but nothing happened or error appeared.
+**What you see**: Selected a carrier and clicked Go but nothing happened or an error appeared.
 
 **Error message**: "ThreeFlow was unable to switch carriers. Try again; if the problem persists, contact support."
 
-**Action**: Retry once. If it persists, contact support via the button in the error message.
+**What to do**: Retry once. If the problem persists, use the contact support button.
 
-## [ERROR-004] Access Denied / Route Guard
+## [ERROR-004] Access Denied
 
-**Symptom**: Tried to access a page and got redirected, or clicked something and received an access error.
+**What you see**: Tried to access a page and got redirected, or clicked something and received an access error.
 
 **Error message**: "You do not have access to view this content."
 
-**Action**: You've hit a route guard. You'll be redirected to the My Quotes page for the project/carrier you were already accessing. If you believe you should have access, contact your ThreeFlow account team — do not attempt to modify the URL.
+**What to do**: You have hit a route guard. You will be redirected to the My Quotes page. If you believe you should have access, contact your ThreeFlow account team. Do not attempt to modify the URL.
 
-## [ERROR-005] ThreeFlow Assist Accidentally Triggered
+## [ERROR-005] Accidentally Sent to ThreeFlow Assist
 
-**Symptom**: Sent products to ThreeFlow Assist unintentionally. Now waiting up to 48 hours.
+**What you see**: Products are now waiting for ThreeFlow Assist processing (up to 48 hours) but you didn't intend to use it.
 
-**Action**: Contact support — this cannot be self-serviced. Use the `#customer-support` Slack channel or email support directly.
-
----
-
-# Common Misconceptions
-
-## [MISC-001] "Self-Serve Quoting is a new system I have to learn"
-
-**Reality**: No new system. Strategic users access carrier quoting through the existing ThreeFlow product comparison page — the same place they already work. The entry point and tools are already familiar.
-
-## [MISC-002] "Carriers lose control when brokers submit quotes"
-
-**Reality**: Carriers retain full visibility and control. They can see all activity, edit broker-submitted quotes, and remain key partners in review and alignment. Nothing is hidden from carriers.
-
-## [MISC-003] "AI-submitted quotes are final and don't need review"
-
-**Reality**: AI can make mistakes. ThreeFlow explicitly warns users after processing. Every quote shows either **Ready to review** or **Action needed** — the strategic must review and confirm before submitting. The system never auto-submits.
-
-## [MISC-004] "I can use Self-Serve Quoting for email-based renewals"
-
-**Reality**: Attach renewal (processing renewals via email) is not available in v1. Renewals must be uploaded as documents or entered manually on the carrier site.
-
-## [MISC-005] "User defaults work the same as for carriers"
-
-**Reality**: User defaults are not available for strategic users in v1. This may slow down strategics who rely on defaults for repetitive data entry — this is a known limitation being evaluated post-pilot.
-
-## [MISC-006] "ThreeFlow Assist is the fastest quoting method"
-
-**Reality**: ThreeFlow Assist has up to 48-hour processing time. For time-sensitive workflows, smart proposals or manual quoting are faster. ThreeFlow Assist is optional and can be skipped entirely.
+**What to do**: Contact support immediately via `#customer-support`. This cannot be self-serviced or undone by the broker.
 
 ---
 
-# Q&A Library
+# Common Questions & Misconceptions
 
-**Q: What is self-serve quoting?**
-A: Self-serve quoting lets approved strategic brokers and GAs start, update, and submit carrier quotes directly inside ThreeFlow without waiting on carrier turnaround. It uses the same quoting tools carriers use today — no new system required.
+## Is this a new system I have to learn?
+No. Strategic users access carrier quoting through the existing ThreeFlow product comparison page — the same place they already work. The entry point and tools are already familiar. No new system, no new login, no new training required.
 
-**Q: Who can use self-serve quoting?**
-A: Approved strategic users with the `quote management` permission. Currently limited to pilot participants: Alliant Ben West Programs Team, The Cason Group, Brown & Brown (NMGA), and MMA - NC.
+## Do carriers lose control when brokers submit quotes?
+No. Carriers retain full visibility and control at all times. They can see all broker activity, edit broker-submitted quotes, and remain key partners in review and alignment. Nothing is hidden from carriers.
 
-**Q: Does this apply to GAs?**
-A: Yes. Self-serve quoting is designed for both national brokers and General Agents (GAs) who are approved strategic users.
+## Does AI auto-submit quotes?
+No. ThreeFlow AI processes and populates quote data, but never auto-submits. Every quote shows either Ready to Review or Action Needed after processing. The broker must review and manually submit.
 
-**Q: What quoting methods are available?**
-A: Smart proposals, smart renewals, ThreeFlow Assist, copy plan design, and manual quoting. User defaults are not available in v1.
+## Is ThreeFlow Assist the same as smart proposals?
+No. Smart proposals process documents quickly (1–5 minutes) and are the recommended method for self-serve quoting. ThreeFlow Assist has a longer processing time (up to 48 hours) and is better suited for complex scenarios where the broker is willing to wait. ThreeFlow Assist is optional — it can always be skipped.
 
-**Q: Does self-serve quoting work for renewals?**
-A: Yes — smart renewals support renewing business. Note: attach renewal (processing via email) is not available in v1. Documents must be uploaded or data entered manually.
+## Can I use self-serve quoting for renewals?
+Yes. Smart renewals support renewing business. The workflow is the same as smart proposals. The only limitation is that attach renewal (processing renewals via email) is not available in v1.
 
-**Q: Will I get confirmation when a quote is submitted?**
-A: Yes. Email confirmation sent automatically. The quote edits screen also captures name, date, timestamp, and submitted products.
+## What if AI makes a mistake on my quote?
+ThreeFlow explicitly warns that AI can make mistakes. After processing, review all rates and plan design carefully before submitting. Products that need attention are flagged as Action Needed. You can always correct AI output manually before submitting.
 
-**Q: What do the quote statuses mean?**
-- **Processing** — AI is extracting rate and plan design data from your uploaded document
-- **Ready to review** — AI found and entered rates. Review before submitting — AI can make mistakes
-- **Action needed** — AI couldn't populate required fields. Enter missing data manually before submitting
-- **Submitted** — Quote submitted to carrier
-- **In progress** — Quote active but not yet submitted
+## Can I quote multiple carriers at the same time?
+Yes. While one carrier's documents are processing, start a quote for another carrier using the carrier dropdown. Parallel quoting across multiple carriers is fully supported.
 
-**Q: Can I quote multiple carriers at the same time?**
-A: Yes. While one carrier's documents are processing, start a quote for another carrier using the carrier dropdown. Parallel quoting across multiple carriers is supported.
+## Will I get confirmation when I submit?
+Yes. An email confirmation is sent automatically when a product is submitted. The quote edits screen also captures name, date, timestamp, and submitted products.
 
-**Q: What if I need help during the pilot?**
-A: Ask in `#customer-support` or use the contact support button in any error message. For pilot-specific feedback, use `#temp-broker-self-serve-quoting-feedback`.
-
-**Q: What is self quoting / self service quoting / broker quoting?**
-A: You're likely thinking of Self-Serve Quoting — ThreeFlow's feature that lets approved strategic brokers and GAs start, update, and submit carrier quotes directly inside ThreeFlow without waiting on carrier turnaround. No new system required — execution happens where the work already lives.
+## Who do I contact if something isn't working?
+Ask in `#customer-support` on Slack or use the **contact support** button that appears in error messages. For pilot-specific feedback, use `#temp-broker-self-serve-quoting-feedback`.
 
 ---
 
 # Quick Reference
 
+## Key Actions
+
 | Task | Where to start |
 |---|---|
 | Start a new quote | Product comparison page → Start Quote |
-| Update existing quote | Product comparison page → Update Quote |
-| Switch carriers | Carrier dropdown → select carrier → Go |
-| Fix action needed | Edit details → enter missing fields → submit |
+| Update an existing quote | Product comparison page → Update Quote |
+| Start a renewal | Product comparison page → Start Renewal |
+| Switch carriers mid-workflow | Carrier quote dropdown → select carrier → Go |
+| Fix an Action Needed item | Edit details → enter missing fields → submit |
 | Get help | #customer-support or contact support button |
 | Pilot feedback | #temp-broker-self-serve-quoting-feedback |
 
-| Status | Meaning | Action needed? |
+## Quote Statuses at a Glance
+
+| Status | Action needed? |
+|---|---|
+| Processing | Wait |
+| Ready to review | Review then submit |
+| Action needed | Enter missing data then submit |
+| Submitted | None — done |
+| In progress | Review and submit |
+
+## Quoting Methods at a Glance
+
+| Method | Best for | Speed |
 |---|---|---|
-| Processing | AI working | Wait |
-| Ready to review | AI succeeded | Review then submit |
-| Action needed | AI incomplete | Enter missing data then submit |
-| Submitted | Done | None |
-| In progress | Not yet submitted | Review and submit |
+| Smart proposals | New business, document available | Fast (1–5 min) |
+| Smart renewals | Renewing business, document available | Fast (1–5 min) |
+| Manual quoting | Rate-only updates, specific field changes | Immediate |
+| Copy plan design | Similar quotes across carriers | Immediate |
+| ThreeFlow Assist | Complex scenarios, not time-sensitive | Slow (up to 48 hrs) |
