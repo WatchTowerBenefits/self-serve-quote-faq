@@ -119,3 +119,19 @@ _Automated with this <https://threeflow.app.n8n.cloud/workflow/a6Rtq1rRHv7hviyT?
 _Automated with this <https://threeflow.app.n8n.cloud/workflow/a6Rtq1rRHv7hviyT?utm_source=n8n-internal&utm_medium=powered_by&utm_campaign=n8n-nodes-base.slack_0416644a983f7e78d8e8cf5d9379b20dc2cf3c8fbdfa90276f9a8496dbc411fe|n8n workflow>_
 
 ---
+
+## 2026-03-30 — 👍 Helpful
+
+**Question:** Unknown question
+
+**Oracle's answer:** Self-Serve Quoting is available to *brokers* who meet the following criteria:
+
+1. The broker must be working on a *new business opportunity* (not a renewal).
+2. The employer group must have *51–500 enrolled employees*.
+3. The lines of coverage being quoted must be *fully insured*.
+4. The opportunity must be set up and active in ThreeFlow before quoting can begin.
+
+If all four boxes are checked, they're good to go.
+_Automated with this <https://threeflow.app.n8n.cloud/workflow/a6Rtq1rRHv7hviyT?utm_source=n8n-internal&utm_medium=powered_by&utm_campaign=n8n-nodes-base.slack_0416644a983f7e78d8e8cf5d9379b20dc2cf3c8fbdfa90276f9a8496dbc411fe|n8n workflow>_
+
+---
