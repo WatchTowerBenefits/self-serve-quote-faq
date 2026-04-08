@@ -211,3 +211,12 @@ Brokers can submit quote requests, provide plan details, and track progress — 
 _Automated with this <https://threeflow.app.n8n.cloud/workflow/a6Rtq1rRHv7hviyT?utm_source=n8n-internal&utm_medium=powered_by&utm_campaign=n8n-nodes-base.slack_0416644a983f7e78d8e8cf5d9379b20dc2cf3c8fbdfa90276f9a8496dbc411fe|n8n workflow>_
 
 ---
+
+## 2026-04-08 — 👍 Helpful
+
+**Question:** Unknown question
+
+**Oracle's answer:** Self-Serve Quoting is available for *brokers* on accounts where the feature has been enabled.
+_Automated with this <https://threeflow.app.n8n.cloud/workflow/a6Rtq1rRHv7hviyT?utm_source=n8n-internal&utm_medium=powered_by&utm_campaign=n8n-nodes-base.slack_0416644a983f7e78d8e8cf5d9379b20dc2cf3c8fbdfa90276f9a8496dbc411fe|n8n workflow>_
+
+---
